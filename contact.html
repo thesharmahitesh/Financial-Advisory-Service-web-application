@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Financial Advisory Service">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="contact.js" defer></script> <!-- Link to the JavaScript -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header data-aos="fade-down">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="submitContactForm(event)">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Thank You Message -->
+    <section id="thankYouMessage" style="display: none;" data-aos="fade-up" data-aos-delay="200">
+        <h2>Thank You!</h2>
+        <p>Your message has been sent successfully.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up" data-aos-delay="400">
+        <p>&copy; 2025 Financial Advisory Service</p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
